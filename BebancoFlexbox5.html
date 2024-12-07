@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BebancoFlexbox5</title>
 
@@ -14,231 +14,197 @@
         body {
             display: flex;
             flex-direction: column;
+            height: calc(100vh - 8px);
+            padding: 4px;
             gap: 4px;
-            padding: 2px;
-            height: calc(100vh - 4px);
-        }
-
-        nav, main, aside, footer {
-            border: 1px solid black;
         }
 
         nav {
             display: flex;
+            border: 1px solid black;
             flex-direction: column;
+            align-items: center;
+        }
+
+        .nav1 {
+            display: flex;
             padding: 4px;
-            gap: 4px;
             align-items: center;
-        }
-
-        .navcont1 {
-            display: flex;
-            flex-direction: row;
             gap: 4px;
-            align-items: center;
+
         }
 
-        .navredbox {
+        .redbox {
             background-color: red;
-            height: 30px;
-            width: 30px;
+            height: 40px;
+            width: 40px;
         }
 
-        .navcont2 {
-            display: flex;
-            flex-direction: row;
+        .nredboxes {
+            background-color: red;
             gap: 4px;
-        }
-
-        .navredbox2 {
-            background-color: red;
             height: 30px;
-            width: 60px;
+            width: 50px;
         }
 
         .container {
             display: flex;
-            flex-direction: row;
             flex-grow: 1;
-            gap: 4px;
+            flex-direction: row;
+            gap: 4px; 
         }
 
         main {
-           display: flex;
-           flex-wrap: wrap;
-           flex-grow: 1;
-           gap: 5px;
-           padding: 5px;
-           align-items: center;
-           justify-content: space-around;
-       }
-       
-        .maincont1, .maincont2 {
-           border: 1px solid black;
-    }
-        
-        .maincont1 {
             display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            width: 310px;
-            gap: 5px;
-            padding: 5px;
+            border: 1px solid black;
+            flex-grow: 1;
+            justify-content: space-around;
+            align-items: center;
         }
 
-        .mainbox1 {
-            height: 70px;
-            border: 1px solid black;
-            width: 70px;
-        }
-          
-          
-        .maincont2 {
+        .bigbox {
             display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            width: 310px;
-            gap: 5px;
-            padding: 5px;
-        }
-          
-        .mainbox2 {
-            height: 70px;
             border: 1px solid black;
-            width: 70px;
+            width: 340px;
+            flex-wrap: wrap;
+            padding: 8px;
+            gap: 4px;
+            align-content: flex-start;
+        }
+        
+
+        .mainboxes {
+            border: 1px solid black;
+            height: 80px;
+            width: 80px;
         }
 
         aside {
             display: flex;
             flex-direction: column;
-            padding: 4px;
+            border: 1px solid black;
             gap: 4px;
+            padding: 4px;
         }
 
-        .asideitem {
-            border: 1px solid black;
+        .asideboxes {
+            height: 30px;
             width: 15vw;
-            height: 35px;
+            border: 1px solid black;
         }
 
         footer {
+            border: 1px solid black;
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
         }
 
-        .footercont1 {
+        .footerbox {
             display: flex;
-            flex-direction: row;
-            gap: 4px;
             align-items: center;
-            margin-left: 4px;
-        }
-
-        .flexcprt {
-            display: flex;
-            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
         }
 
         .footerredbox {
             background-color: red;
-            height: 30px;
-            width: 30px;
+            height: 40px;
+            width: 40px;
         }
 
-        .footercont2 {
+        .footerl {
             display: flex;
             flex-direction: row;
             gap: 4px;
-            align-items: center;
-            margin-right: 4px;
+        }
+        .footertini {
+            background-color: red;
+            height: 25px;
+            width: 25px;
         }
 
-        .footerredbox2 {
-            background-color: red;
-            height: 20px;
-            width: 20px;
-        }
     </style>
 </head>
-
 <body>
     <nav>
-        <div class="navcont1">
-            <div class="navredbox"></div>
-            <div>FLEXBOX</div>
+        <div class="nav1">
+            <div class="redbox"></div>
+            <div class="navtext">FLEXBOX</div>
         </div>
-        <div class="navcont2">
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
-            <div class="navredbox2"></div>
+
+        <div class="nav1">
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
+            <div class="nredboxes"></div>
         </div>
     </nav>
 
     <div class="container">
-      <main>
-            <div class="maincont1">
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
-              <div class="mainbox1"></div>
+        <main>
+            <div class="bigbox">
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
             </div>
 
-            <div class="maincont2">
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
-                <div class="mainbox2"></div>
+            <div class="bigbox">
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
+                <div class="mainboxes"></div>
             </div>
         </main>
+
         <aside>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
-            <div class="asideitem"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
         </aside>
     </div>
 
     <footer>
-        <div class="footercont1">
+        <div class="footerbox">
             <div class="footerredbox"></div>
-            <div class="flexcprt">
-                <div>FLEXBOX</div>
-                <div>©Copyright All rights reserved.</div>
+            <div class="h1">
+                <p>FLEXBOX</p>
+                <p>&copy;Copyright All rights reserved</p>
             </div>
-        </div>
+        </div> 
 
-        <div class="footercont2">
-            <div class="footerredbox2"></div>
-            <div class="footerredbox2"></div>
-            <div class="footerredbox2"></div>
-            <div class="footerredbox2"></div>
-            <div class="footerredbox2"></div>
-        </div>
+        <div class="footerbox">
+            <div class="footerl">
+                <div class="footertini"></div>
+                <div class="footertini"></div>
+                <div class="footertini"></div>
+                <div class="footertini"></div>
+                <div class="footertini"></div>
+            </div>
     </footer>
-
-
-</body></html>
+    
+</body>
+</html>
